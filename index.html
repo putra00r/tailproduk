@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chef Burger - Senin Semangat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0d6b2f,#159947,#20b15b);
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+color:white;
+
+position:relative;
+
+}
+
+/* BACKGROUND */
+
+body::before{
+
+content:'';
+
+position:fixed;
+
+width:700px;
+
+height:700px;
+
+background:#5cff9a;
+
+filter:blur(220px);
+
+top:-220px;
+
+left:-180px;
+
+opacity:.25;
+
+}
+
+body::after{
+
+content:'';
+
+position:fixed;
+
+width:600px;
+
+height:600px;
+
+background:#ffff6d;
+
+filter:blur(180px);
+
+bottom:-200px;
+
+right:-160px;
+
+opacity:.15;
+
+}
+
+/* HERO */
+
+.hero{
+
+padding:60px 25px;
+
+text-align:center;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:10px 28px;
+
+background:#ffe600;
+
+color:#111;
+
+border-radius:50px;
+
+font-weight:700;
+
+font-size:14px;
+
+margin-bottom:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+font-weight:800;
+
+line-height:60px;
+
+text-shadow:0 8px 30px rgba(0,0,0,.35);
+
+}
+
+.hero h1 span{
+
+color:#FFE600;
+
+}
+
+.hero p{
+
+margin-top:18px;
+
+font-size:19px;
+
+font-weight:400;
+
+opacity:.95;
+
+}
+
+/* PRODUCT */
+
+.product{
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-end;
+
+gap:25px;
+
+margin-top:50px;
+
+flex-wrap:wrap;
+
+}
+
+.product img{
+
+width:260px;
+
+filter:
+
+drop-shadow(0 25px 40px rgba(0,0,0,.45));
+
+transition:.35s;
+
+}
+
+.product img:hover{
+
+transform:translateY(-15px) scale(1.04);
+
+}
+
+.info{
+
+margin:70px auto;
+
+max-width:1100px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+padding:20px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+padding:28px;
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,.18);
+
+}
+
+.card i{
+
+font-size:34px;
+
+color:#FFE600;
+
+margin-bottom:18px;
+
+}
+
+.card h2{
+
+font-size:22px;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+line-height:28px;
+
+font-size:15px;
+
+opacity:.92;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+margin-top:50px;
+
+padding:45px 20px;
+
+text-align:center;
+
+background:rgba(0,0,0,.15);
+
+backdrop-filter:blur(10px);
+
+}
+
+.footer h2{
+
+font-size:34px;
+
+margin-bottom:10px;
+
+}
+
+.footer p{
+
+opacity:.9;
+
+}
+
+.whatsapp{
+
+display:inline-block;
+
+margin-top:25px;
+
+background:#25D366;
+
+padding:16px 38px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:700;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+background:#18b955;
+
+transform:scale(1.05);
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:40px;
+
+line-height:45px;
+
+}
+
+.product img{
+
+width:210px;
+
+}
+
+.card{
+
+padding:22px;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="badge">
+SENIN SEMANGAT
+</div>
+
+<h1>
+Awali Minggumu Dengan
+<br>
+<span>Kebab Chef Burger</span>
+</h1>
+
+<p>
+Fresh • Homemade • Tanpa Pengawet
+</p>
+
+<div class="product">
+
+<img src="kebab1.png">
+
+<img src="kebab2.png">
+
+<img src="kebab3.png">
+
+</div>
+
+</section>
+
+<section class="info">
+
+  <div class="card">
+<i class="fas fa-drumstick-bite"></i>
+
+<h2>Daging Sapi Homemade</h2>
+
+<p>
+Dibuat dari daging sapi pilihan yang diolah sendiri oleh Chef Burger tanpa bahan pengawet sehingga menghasilkan rasa yang lebih juicy dan berkualitas.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-cheese"></i>
+
+<h2>Keju Premium</h2>
+
+<p>
+Menggunakan keju slice premium yang lumer sempurna ketika dipanggang sehingga memberikan cita rasa creamy di setiap gigitan.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-leaf"></i>
+
+<h2>Sayuran Segar</h2>
+
+<p>
+Selada segar, kubis pilihan, dan irisan tomat berkualitas yang dipersiapkan setiap hari agar tetap renyah dan menambah kesegaran kebab.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-fire"></i>
+
+<h2>Dipanggang Fresh</h2>
+
+<p>
+Setiap kebab dipanggang setelah dipesan sehingga tortilla terasa renyah di luar namun tetap lembut di bagian dalam.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-star"></i>
+
+<h2>Saus Spesial Chef Burger</h2>
+
+<p>
+Perpaduan saus khas Chef Burger yang gurih, manis, dan sedikit pedas sehingga memberikan rasa yang khas dan membuat pelanggan ingin kembali lagi.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-heart"></i>
+
+<h2>Dibuat dengan Sepenuh Hati</h2>
+
+<p>
+Setiap menu disiapkan dengan standar kualitas terbaik agar pelanggan mendapatkan pengalaman menikmati kebab yang lezat, hangat, dan memuaskan.
+</p>
+
+</div>
+
+</section>
+
+<section class="footer">
+
+<h2>CHEF BURGER</h2>
+
+<p>
+ALL OUTLET KOTA DUMAI
+</p>
+
+<p style="margin-top:15px;font-size:18px;">
+🌯 Mulai Harimu Dengan Energi yang Lebih Lezat 🌯
+</p>
+
+<a class="whatsapp"
+href="https://wa.me/628xxxxxxxxxx">
+
+<i class="fab fa-whatsapp"></i>
+
+Pesan Sekarang
+
+</a>
+
+</section>
+<script>
+
+// Animasi muncul saat halaman dibuka
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+entry.target.style.transform="translateY(0px)";
+
+}
+
+});
+},{
+threshold:.2
+});
+
+cards.forEach((card,index)=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(50px)";
+
+card.style.transition="all .6s ease";
+
+card.style.transitionDelay=(index*.15)+"s";
+
+observer.observe(card);
+
+});
+
+// Floating Effect Produk
+
+const products=document.querySelectorAll(".product img");
+
+products.forEach((img,index)=>{
+
+setInterval(()=>{
+
+img.style.transform="translateY(-10px)";
+
+setTimeout(()=>{
+
+img.style.transform="translateY(0px)";
+
+},1200);
+
+},2200+(index*400));
+
+});
+
+// Mouse Glow
+
+document.addEventListener("mousemove",(e)=>{
+
+const glow=document.querySelector(".mouse-glow");
+
+if(glow){
+
+glow.style.left=e.clientX+"px";
+
+glow.style.top=e.clientY+"px";
+
+}
+
+});
+
+</script>
+
+<div class="mouse-glow"></div>
+
+<style>
+
+.mouse-glow{
+
+position:fixed;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+background:radial-gradient(circle,
+rgba(255,255,255,.22),
+transparent 70%);
+
+transform:translate(-50%,-50%);
+
+z-index:1;
+
+transition:left .08s linear,
+top .08s linear;
+
+}
+
+/* Floating Particles */
+
+.particle{
+
+position:fixed;
+
+bottom:-30px;
+
+width:8px;
+
+height:8px;
+
+background:rgba(255,255,255,.45);
+
+border-radius:50%;
+
+animation:particle 10s linear infinite;
+
+}
+
+@keyframes particle{
+
+0%{
+
+transform:translateY(0) scale(.3);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(1);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+<script>
+
+// Membuat particle otomatis
+
+for(let i=0;i<35;i++){
+
+let p=document.createElement("div");
+
+p.className="particle";
+
+p.style.left=Math.random()*100+"%";
+
+p.style.animationDuration=(6+Math.random()*8)+"s";
+
+p.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(p);
+
+}
+
+</script>
+</body>
+</html>
